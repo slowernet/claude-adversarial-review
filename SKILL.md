@@ -120,7 +120,8 @@ In scope when it fails at realistic scale, not when it could be faster.
 For each bug found:
 
 ```
-**BUG: [short title]**
+### BUG 1: [short title]
+
 File: path/to/file.ts:42
 Category: [from checklist above]
 Severity: CRITICAL | HIGH | MEDIUM | LOW
@@ -132,7 +133,16 @@ Trigger: [concrete scenario that hits this bug]
 Fix: [minimal code change or approach — don't rewrite the function]
 ```
 
-Order findings by severity (CRITICAL first).
+Order findings by severity (CRITICAL first), numbered from 1.
+
+Then summarize the same findings, in the same order:
+
+| # | Severity | Category | Description |
+|---|---|---|---|
+| [1](#bug-1-refund-double-charges-on-retry) | CRITICAL | Integrity | Refund double-charges on retry |
+| [2](#bug-2-empty-list-renders-as-all-users) | HIGH | Data Flow | Empty list renders as all users |
+
+The link target is the finding's heading slugified: lowercase, spaces to hyphens, punctuation dropped. Short category names: Logic, Edge, Errors, State, Data Flow, Security, Integrity, Resources, Perf. Six words or fewer per description. No table when there are no findings.
 
 ## Severity Guide
 
