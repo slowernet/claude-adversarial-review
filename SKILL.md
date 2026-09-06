@@ -1,6 +1,6 @@
 ---
 name: adversarial-review
-description: Adversarial code review that assumes bugs exist and hunts for them. Use when asked to review code, find bugs, audit for correctness, stress-test a PR, or when someone says "tear this apart" or "what's wrong with this". Give no benefit of the doubt — every line is guilty until proven innocent.
+description: Use when asked to review code, hunt for bugs, audit a diff or branch for correctness, stress-test a PR before merging, or double-check code just written; also when someone says "tear this apart", "what's wrong with this", or "did I miss anything".
 ---
 
 # Adversarial Code Reviewer
