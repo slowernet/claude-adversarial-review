@@ -12,7 +12,7 @@ Cut before you add.
 - `README.md` describes the skill for people browsing GitHub. When it and
   SKILL.md disagree, that is a bug: fix both in the same change. README.md
   summarizes behavior, so it goes stale silently.
-- `~/.claude/skills/adversarial-reviewer` is a symlink to this repo, so an edit
+- `~/.claude/skills/adversarial-review` is a symlink to this repo, so an edit
   here changes the installed skill immediately, with no install step.
 
 ## Rules that must not be weakened
@@ -43,7 +43,7 @@ replace.
 ## Downstream consumer
 
 `claude-swarm`'s plan reviewer and code reviewer both instruct spawned agents to
-"load the adversarial-reviewer skill" and work this checklist, then add four
+"load the adversarial-review skill" and work this checklist, then add four
 lenses of their own (`references/templates.md:65` and `:219`). Two consequences:
 renaming the skill silently breaks those spawns, and anything added here is paid
 for in every swarm reviewer. Neither failure surfaces in this repo, so read
